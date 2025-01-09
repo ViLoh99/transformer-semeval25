@@ -16,11 +16,14 @@ subtaskA_descriptions: integrating ChatGPT descriptions & captions
 subtaskA_dev: subtaskA_1 adapted for development data
 
 Dataset Overview - **_gpt-desc.csv_**
+
+
 This dataset was generated using ChatGPT-4 (chatgpt4o) and combined with existing data from the SemEval task to create a comprehensive training dataset. It consists of entries structured with a Compound Noun, sentence type, Meaning, Illustration, and Illustrative Sentence. The dataset is designed to support linguistic model training, focusing on compound nouns and idiomatic expressions.
+
 
 The ChatGPT-generated data was created across multiple sessions on 17.11.2024 and 24.11.2024, while the SemEval dataset provides additional context and examples for real-world application.
 
-Dataset Construction
+**Dataset Construction:**
 
 ChatGPT-Generated Data
 This part of the dataset was created through iterative prompts aimed at generating creative examples of compound nouns and idiomatic phrases.
@@ -35,6 +38,8 @@ Illustration (sentence): A vivid, text-based depiction designed to enhance under
 Illustrative Sentence (pic_sentence): A contextual example of usage.**_
 
 Example Entry:
+
+
 **Outer Space**
 
 Meaning: Outer space refers to the vast, nearly empty expanse beyond Earth's atmosphere, where celestial bodies such as stars, planets, and galaxies exist.
