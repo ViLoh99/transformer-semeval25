@@ -29,13 +29,17 @@ ChatGPT-Generated Data
 This part of the dataset was created through iterative prompts aimed at generating creative examples of compound nouns and idiomatic phrases.
 
 Example prompt structure:
+
+
 _**Explain me "Outer space" in one sentence and give me an illustration but without picture and provide me an illustrative sentence.**_
+
+
 ChatGPT responses included the following structure:
-_**Compound Noun or Idiomatic Phrase
+**_
 Meaning: A concise explanation of the term.
 sentence type: A type of the Illustration.
 Illustration (sentence): A vivid, text-based depiction designed to enhance understanding.
-Illustrative Sentence (pic_sentence): A contextual example of usage.**_
+Illustrative Sentence (pic_sentence): A contextual example of usage._**
 
 Example Entry:
 
