@@ -35,11 +35,19 @@ _**Explain me "Outer space" in one sentence and give me an illustration but with
 
 
 ChatGPT responses included the following structure:
-**_
-Meaning: A concise explanation of the term.
-sentence type: A type of the Illustration.
-Illustration (sentence): A vivid, text-based depiction designed to enhance understanding.
-Illustrative Sentence (pic_sentence): A contextual example of usage._**
+
+
+_**Meaning: A concise explanation of the term.**_
+
+
+_**sentence type: A type of the Illustration.**_
+
+
+_**Illustration (sentence): A vivid, text-based depiction designed to enhance understanding.**_
+
+
+_**Illustrative Sentence (pic_sentence): A contextual example of usage.**_
+
 
 Example Entry:
 
@@ -47,9 +55,15 @@ Example Entry:
 **Outer Space**
 
 Meaning: Outer space refers to the vast, nearly empty expanse beyond Earth's atmosphere, where celestial bodies such as stars, planets, and galaxies exist.
+
+
 Illustration: For an illustration, imagine a black, star-studded void with the Earth in the foreground, its blue and green hues illuminated by sunlight. Surrounding it, the moon orbits at a distance, while further away, tiny, glowing stars and planets punctuate the endless darkness, emphasizing the immense scale and mystery of outer space.
+
+
 Illustrative Sentence: The astronauts stared out of their capsule into the vast expanse of outer space, marveling at the distant stars and galaxies.
 
 
-Acknowledgments
+**Acknowledgments**
+
+
 This dataset combines the generative capabilities of ChatGPT-4 with the annotations from the SemEval task, creating a resource that is both creative and grounded in linguistic research.
