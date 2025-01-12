@@ -15,6 +15,8 @@ subtaskA_descriptions: integrating ChatGPT descriptions & captions
 
 subtaskA_dev: subtaskA_1 adapted for development data
 
+subtaskA_regression: trying out logistic regression and similar methods for ranking and judging idiomatic / literal
+
 Dataset Overview - **_gpt-desc.csv_**
 
 
