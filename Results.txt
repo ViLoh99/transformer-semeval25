@@ -1,0 +1,224 @@
+Subtask A:
+
+(from subtaskA_1)
+-- cos similarity for ranking, SBERT embeddings, training data
+
+- comparing sentence to captions
+
+entire training data (70):
+final_acc = 0.4
+final_spearman = 0.20142857142857135
+
+only literal (31):
+final_acc = 0.6774193548387096
+final_spearman = 0.3064516129032258
+
+only idiomatic (39):
+final_acc = 0.1794871794871795
+final_spearman = 0.11794871794871792
+
+
+- comparing compound to captions
+
+entire:
+final_acc = 0.4
+final_spearman = 0.16714285714285712
+
+literal:
+final_acc = 0.8064516129032258
+final_spearman = 0.39354838709677425
+
+idiomatic:
+final_acc = 0.07692307692307693
+final_spearman = -0.012820512820512832
+
+
+- comparing average of sentence & compound to captions
+
+entire:
+final_acc = 0.34285714285714286 -> worse than compound / sentence individually
+final_spearman = 0.2271428571428571 -> better than either individually
+
+literal: -> worse than compound, better than sentence
+final_acc = 0.7096774193548387 
+final_spearman = 0.36774193548387096
+
+idiomatic:
+final_acc = 0.05128205128205128 -> worse than either individually
+final_spearman = 0.11538461538461536 -> better than compound, about as good as sentence
+
+
+
+(from subtaskA_captions_cut)
+
+-- cos similarity for ranking, SBERT embeddings, training data, different ranking based on literal / idiomatic Information in Training data
+
+- comparing sentence to captions
+
+entire:
+final_acc = 0.4142857142857143
+final_spearman = 0.29428571428571426
+
+literal:
+final_acc = 0.6774193548387096
+final_spearman = 0.3064516129032258
+
+only idiomatic:
+final_acc = 0.20512820512820512
+final_spearman = 0.2846153846153845
+
+
+- comparing compound to captions
+
+entire:
+final_acc = 0.5428571428571428
+final_spearman = 0.35285714285714287
+
+literal:
+final_acc = 0.8064516129032258
+final_spearman = 0.39354838709677425
+
+idiomatic:
+final_acc = 0.3333333333333333
+final_spearman = 0.3205128205128204
+
+
+-- cutting the captions short 
+-> a few slightly better than with entire caption but no consistency
+
+
+
+(from subtaskA_descriptions)
+
+-- cos similarity for ranking, SBERT embeddings, training data, comparing captions to literal / idiomatic (depending on Information given in Training data) description / caption generated with ChatGPT
+
+- comparing ChatGPT idiomatic / literal description to captions
+
+entire:
+final_acc = 0.6142857142857143 
+final_spearman = 0.17428571428571427
+
+literal:
+final_acc = 0.7096774193548387 -> slight improvement
+final_spearman = 0.31612903225806455
+
+idiomatic:
+final_acc = 0.5384615384615384 -> great improvement
+final_spearman = 0.061538461538461535
+
+
+- comparing ChatGPT idiomatic / literal caption to captions
+
+entire: 
+final_acc = 0.5428571428571428
+final_spearman = 0.11714285714285716
+
+literal:
+final_acc = 0.7419354838709677
+final_spearman = 0.23548387096774187
+
+idiomatic:
+final_acc = 0.38461538461538464
+final_spearman = 0.023076923076923068
+
+
+
+-- cos similarity, SBERT embeddings, comparing sentence to literal & idiomatic ChatGPT descriptions, trying to determine idiomatic / literal
+
+0.5857142857142857
+
+
+-- different similarity functions, SBERT embeddings
+
+- cos similarity = dot product = negative euclidean distance
+
+literal:
+final_acc = 0.7096774193548387
+final_spearman = 0.31612903225806455
+
+idiomatic:
+final_acc = 0.5384615384615384
+final_spearman = 0.061538461538461535
+
+
+- negative manhattan distance
+
+literal:
+final_acc = 0.7096774193548387
+final_spearman = 0.29677419354838713
+
+idiomatic:
+final_acc = 0.5897435897435898
+final_spearman = 0.11025641025641028
+
+entire: -> slightly better than others because better for idiomatic
+final_acc = 0.6428571428571429
+final_spearman = 0.19285714285714278
+
+
+
+(from subtaskA_regression)
+results here are the best found by playing around and thus not properly replicable
+
+-- SBERT embeddings, ranking (worse than random, depends on train-test split)
+
+- logistic regression: 0.11
+
+- svm: -0.09
+
+- random forest: 0.08
+
+
+-- SBERT embeddings, pca, ranking (worse than random, depends on train-test split, except random forest)
+
+- logistic regression: 0.17
+
+- svm: -0.14
+
+- random forest: 0.22
+
+
+-- SBERT embeddings, top 1 prediction
+
+- logistic regression: 0.83
+
+- svm: -0.07
+
+- random forest: 0.83
+
+
+-- SBERT embeddings, pca, top 1 prediction (depends on train-test split)
+
+- logistic regression: 0.78
+
+- svm: -0.09
+
+- random forest: 0.76
+
+
+
+-> Problem with all of them: 0 accuracy for some classes
+
+
+
+-- SBERT embeddings, predicting idiomatic / literal (depends on train-test split)
+
+- logistic Regression: 0.67
+
+- svm: 0.05
+
+- random forest: 0.61
+
+
+
+
+
+Subtask B:
+
+-- cos similarity, SBERT embeddings, comparing average of captions 1 & 2 to options for caption 3
+
+entire (20): 0.6
+
+literal (7): 0.7142857142857143
+
+idiomatic (13): 0.5384615384615384
