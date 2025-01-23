@@ -9,7 +9,7 @@ Notebooks:
 
 subtaskA_1 : similarity between compound and/or sentence and captions embeddings; random baseline
 
-subtaskA_captions_cut: different ranking for idiomatic; captions cut to certain word / sentence count#
+subtaskA_captions_cut: different ranking for idiomatic; captions cut to certain word / sentence count
 
 subtaskA_descriptions: integrating ChatGPT descriptions & captions
 
@@ -20,6 +20,7 @@ subtaskA_regression: trying out logistic regression and similar methods for rank
 subtaskA_BERT_embeddings: computes sentence and compound embeddings of all sentence-like columns
 
 
+subtaskA_combine_BERT_SBERT : uses predictions from subtaskA_BERT_embeddings for literal / idiomatic & SBERT for ranking
 
 
 Dataset Overview - **_gpt-desc.csv_**
