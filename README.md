@@ -17,7 +17,11 @@ subtaskA_dev: subtaskA_1 adapted for development data
 
 subtaskA_regression: trying out logistic regression and similar methods for ranking and judging idiomatic / literal
 
-subtaskA_BERT_embeddings: computes sentence and compound embeddings of all sentence-like columns
+subtaskA_BERT_embeddings: computes sentence and compound embeddings of all sentence-like columns. Embeddings are saved in pkl file
+
+subtaskA_predictions_from_BERT : computes binary idomatic/literal classification predictions and ranking predictions on BERT embeddings. Needs a pkl file generated with notebook subtaskA_BERT_embeddings. Generates a pkl file binary_pred with binary classification predictions
+
+subtaskA_1_experiments: Adaption of subtaskA_1 that uses SBERT to generate ranking predictions. Needs pkl file generated in subtaskA_predictions_from_BERT 
 
 
 subtaskA_combine_BERT_SBERT : uses predictions from subtaskA_BERT_embeddings for literal / idiomatic & SBERT for ranking
