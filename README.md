@@ -84,9 +84,13 @@ This dataset combines the generative capabilities of ChatGPT-4 with the annotati
 
 
 **Codabench Pages**
+
 TaskA model selection [[https://www.codabench.org/competitions/4920/#/results-tab]]
+
 TaskA competition page [[https://www.codabench.org/competitions/4813/#/results-tab]]
+
 TaskB model selection [[https://www.codabench.org/competitions/4922/#/results-tab]]
+
 TaskB competition page [[https://www.codabench.org/competitions/4815/]]
 
 Shared Task page [[https://semeval2025-task1.github.io/]]
