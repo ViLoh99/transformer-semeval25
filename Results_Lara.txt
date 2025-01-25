@@ -210,6 +210,37 @@ results here are the best found by playing around and thus not properly replicab
 - random forest: 0.61
 
 
+(from subtaskA_combine_BERT_SBERT)
+-- BERT predictions idiomatic / literal, meanSecondToLast; SBERT for ranking, compared to idiomatic / literal meaning
+
+
+- no change to ChatGPT meaning, no preprocessing
+
+entire: 
+final_acc = 0.37142857142857144
+final_spearman = 0.18285714285714283
+
+
+- no change to ChatGPT meaning, with preprocessing  -> slight improvement
+
+entire:
+final_acc = 0.4
+final_spearman = 0.1842857142857143
+
+
+- cut ChatGPT meaning, no preprocessing
+
+entire: 
+final_acc = 0.5571428571428572  -> best top 1 accuracy
+final_spearman = 0.12571428571428564
+
+
+- cut ChatGPT meaning, with preprocessing
+
+entire: 
+final_acc = 0.5142857142857142
+final_spearman = 0.1499999999999999
+
 
 
 
