@@ -7,7 +7,7 @@ https://semeval2025-task1.github.io/
 
 Notebooks:
 
-subtaskA_1 : similarity between compound and/or sentence and captions embeddings; random baseline
+subtaskA_1 : similarity between compound and/or sentence and captions embeddings with SBERT; random baseline
 
 subtaskA_captions_cut: different ranking for idiomatic; captions cut to certain word / sentence count
 
@@ -23,8 +23,9 @@ subtaskA_predictions_from_BERT : computes binary idomatic/literal classification
 
 subtaskA_1_experiments: Adaption of subtaskA_1 that uses SBERT to generate ranking predictions. Needs pkl file generated in subtaskA_predictions_from_BERT 
 
-
 subtaskA_combine_BERT_SBERT : uses predictions from subtaskA_predictions_from_BERT (needs pkl file) for literal / idiomatic information & SBERT for ranking
+
+subtaskB: SBERT & cosine similarity
 
 
 Dataset Overview - **_gpt-desc.csv_**
