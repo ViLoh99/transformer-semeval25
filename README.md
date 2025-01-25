@@ -24,7 +24,7 @@ subtaskA_predictions_from_BERT : computes binary idomatic/literal classification
 subtaskA_1_experiments: Adaption of subtaskA_1 that uses SBERT to generate ranking predictions. Needs pkl file generated in subtaskA_predictions_from_BERT 
 
 
-subtaskA_combine_BERT_SBERT : uses predictions from subtaskA_BERT_embeddings for literal / idiomatic & SBERT for ranking
+subtaskA_combine_BERT_SBERT : uses predictions from subtaskA_predictions_from_BERT (needs pkl file) for literal / idiomatic information & SBERT for ranking
 
 
 Dataset Overview - **_gpt-desc.csv_**
