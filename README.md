@@ -92,5 +92,9 @@ TaskA competition page [[https://www.codabench.org/competitions/4813/#/results-t
 TaskB model selection [[https://www.codabench.org/competitions/4922/#/results-tab]]
 
 TaskB competition page [[https://www.codabench.org/competitions/4815/]]
+<<<<<<< Updated upstream
 
 Shared Task page [[https://semeval2025-task1.github.io/]]
+=======
+Shared Task page [[https://semeval2025-task1.github.io/]]
+>>>>>>> Stashed changes
