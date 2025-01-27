@@ -243,6 +243,37 @@ final_spearman = 0.1499999999999999
 
 
 
+for development data (subtaskA_dev), results from Codabench:
+
+context sentence, no preprocessing
+0.53
+2.82
+
+context sentence, with preprocessing
+0.53
+2.77
+
+
+compound, no preprocessing
+0.47
+2.66
+
+compound, with preprocessing
+0.6
+2.85
+
+
+combined, no preprocessing
+0.53
+2.75
+
+combined, with preprocessing
+0.6
+2.84
+
+
+
+
 
 Subtask B:
 
