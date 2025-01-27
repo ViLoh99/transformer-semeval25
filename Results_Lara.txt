@@ -278,6 +278,18 @@ combined BERT & SBERT auf Codabench dev:
 
 
 
+for test data:
+
+combine BERT & SBERT:
+0.33
+2.61
+
+no BERT, compound, preprocessing:
+0.4
+2.61
+
+
+
 Subtask B:
 
 -- cos similarity, SBERT embeddings, comparing average of captions 1 & 2 to options for caption 3
