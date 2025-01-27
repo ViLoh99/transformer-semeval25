@@ -25,6 +25,8 @@ subtaskA_1_experiments: Adaption of subtaskA_1 that uses SBERT to generate ranki
 
 subtaskA_combine_BERT_SBERT : uses predictions from subtaskA_predictions_from_BERT (needs pkl file) for literal / idiomatic information & SBERT for ranking
 
+subtaskA_test: get submission format for test data with best combination from subtaskA_dev (compound & preprocessing) & from subtaskA_combine_BERT_SBERT
+
 subtaskB: SBERT & cosine similarity
 
 subtaskB_expreiments: SBERT, BERT , cosine similarity 
