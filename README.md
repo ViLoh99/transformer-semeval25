@@ -79,6 +79,67 @@ Illustration: For an illustration, imagine a black, star-studded void with the E
 Illustrative Sentence: The astronauts stared out of their capsule into the vast expanse of outer space, marveling at the distant stars and galaxies.
 
 
+
+
+**Fine-Tuning BERT for Subtask A**
+
+This repository contains a Jupyter Notebook for fine-tuning a pre-trained BERT model on Subtask A. The notebook includes steps for model training, evaluation, and uploading the trained model to Hugging Face.
+
+
+**Dataset and Model**
+
+The data used for this project is in the Jupyter Notebook named subtaskA_bert-model-fine-tuning.ipynb. The pre-trained model is based on bert-base-uncased. The model is fine-tuned using the dataset gpt-desc.csv to learn the compound, sentence type, and sentence. The goal is to recognize whether a given sentence is literal or idiomatic.
+
+
+**Features**
+
+Maps idiomatic and literal types: Literal sentences are labeled as 0, while idiomatic sentences are labeled as 1.
+
+Combines sentence type and compound: Uses [SEP] to separate components, ensuring compatibility with Hugging Face.
+
+Splits data: Uses an 80% training and 20% test split.
+
+Uses Hugging Face Trainer API: Automates training instead of manual tuning and tracks results with wandb.
+
+Monitors performance: Tracks training loss and validation loss.
+
+Uploads to Hugging Face: The trained model is pushed for deployment.
+
+
+**Requirements**
+
+To run this notebook, install the required dependencies using:
+
+pip install transformers datasets torch
+
+
+**Usage**
+
+Load the dataset and preprocess it.
+
+Fine-tune the BERT model using Hugging Face's Trainer.
+
+Evaluate the model on test data.
+
+Save and push the model to Hugging Face.
+
+Run the notebook step by step to execute the training process.
+
+
+**Model Deployment**
+
+Once fine-tuned, the model is pushed to Hugging Face for sharing and deployment. You can access it using:
+
+from transformers import AutoModelForSequenceClassification
+model = AutoModelForSequenceClassification.from_pretrained("jlsalim/bert-uncased-idiomatic-literal-recognizer")
+
+
+**License**
+
+This project is released under the MIT License.
+
+
+
 **Acknowledgments**
 
 
