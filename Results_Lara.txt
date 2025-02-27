@@ -281,11 +281,11 @@ combined BERT & SBERT auf Codabench dev:
 for test data:
 
 combine BERT & SBERT:
-0.33
+0.4
 2.61
 
 no BERT, compound, preprocessing:
-0.4
+0.33
 2.61
 
 
