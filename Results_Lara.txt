@@ -278,7 +278,7 @@ combined BERT & SBERT auf Codabench dev:
 
 
 
-for test data:
+for test data (subtaskA_test):
 
 combine BERT & SBERT:
 0.4
