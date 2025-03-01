@@ -87,6 +87,21 @@ final_spearman = 0.3205128205128204
 -> a few slightly better than with entire caption but no consistency
 
 
+(from subtaskA_train_preprocessing)
+compound
+0.35714285714285715
+0.13857142857142857
+
+sentence
+0.4142857142857143
+0.1642857142857142
+
+compound & sentence
+0.37142857142857144
+0.14999999999999994
+
+
+
 
 (from subtaskA_descriptions)
 
