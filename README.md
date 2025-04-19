@@ -13,7 +13,7 @@ subtaskA_captions_cut: different ranking for idiomatic; captions cut to certain 
 
 subtaskA_train_preprocessing: basic approach from subtaskA_1 adapted to include preprocessing
 
-subtaskA_descriptions: integrating ChatGPT descriptions & captions
+subtaskA_descriptions: integrating ChatGPT descriptions & captions; alternative similarity scores
 
 subtaskA_dev: subtaskA_1 adapted for development data
 
