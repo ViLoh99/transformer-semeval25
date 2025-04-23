@@ -305,6 +305,36 @@ no BERT, compound, preprocessing:
 
 
 
+comparing sentence to captions, no preprocessing
+
+test data:
+entire (15)
+0.26666666666666666
+0.05333333333333334
+
+literal (7)
+0.42857142857142855
+0.07142857142857141
+
+idiomatic (8)
+0.125
+0.037500000000000006
+
+extended evaluation data:
+entire (100)
+0.41
+0.16899999999999996
+
+literal (54)
+0.6481481481481481
+0.29074074074074074
+
+idiomatic (46)
+0.13043478260869565
+0.02608695652173913
+
+
+
 Subtask B:
 
 -- cos similarity, SBERT embeddings, comparing average of captions 1 & 2 to options for caption 3
